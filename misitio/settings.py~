@@ -25,7 +25,7 @@ SECRET_KEY = '-zxh^11u1%bf34yp&co99^a1fauk&e&cc+0hzc)#45h46%=l))'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://erickestrada.pythonanywhere.com/','127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
