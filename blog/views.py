@@ -7,5 +7,5 @@ def listar_pub(request):
     return render(request, 'blog/listar_pub.html', {'pub': pub})
 
 def detalle_pub(request, pk):
-    pub = get_object_or_404(Publicar, pk=pk)
+    p = get_object_or_404(Publicacion, pk=pk)
     return render(request, 'blog/detalle_publicacion.html', {'p':p })
