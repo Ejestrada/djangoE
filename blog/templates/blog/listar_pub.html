@@ -7,7 +7,6 @@
           <p>Publicacion: {{p.fecha_publicacion}}</p>
            <h1><a href="{%url 'postea' pk=p.pk %}">{{p.titulo}}</a></h1>
           <p>{{p.texto|linebreaksbr}}</p>
-        
         </div>
         {% endfor %}
 
