@@ -5,6 +5,7 @@
                <div class="date">
                    {{ p.fecha_publicacion }}
                </div>
+<<<<<<< HEAD
        {% else %}
           <a class="btn btn-default" href="{% url 'post_publish' pk=p.pk %}">Publicar</a>
        {% endif %}
@@ -14,4 +15,14 @@
                <p>{{ p.texto|linebreaksbr }}</p>
            </div>
 
+=======
+               {% else %}
+               <a class="btn btn-default" href="{% url 'post_publish' pk=p.pk %}">Publish</a>
+               {% endif %}
+               <a class="btn btn-default" href="{% url 'post_edit' pk=p.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+               <a class="btn btn-default" href="{% url 'post_remove' pk=p.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
+               <h1><a href="">{{ p.titulo }}</a></h1>
+               <p>{{ p.texto|linebreaksbr }}</p>
+           </div>
+>>>>>>> 54824ed86cea78e288af450baaf3fa34baba44e0
    {% endblock content %}
