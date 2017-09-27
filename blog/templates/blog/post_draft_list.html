@@ -3,13 +3,8 @@
 {% block content %}
     {% for post in posts %}
         <div class="post">
-<<<<<<< HEAD
             <p class="date">Creacion: {{ post.fecha_creacion|date:'d-m-Y' }}</p>
             <h1><a href="{% url 'postea' pk=post.pk %}">{{ post.titulo }}</a></h1>
-=======
-            <p class="date">created: {{ post.fecha_creacion|date:'d-m-Y' }}</p>
-            <h1><a href="{% url 'detalle_publicacion' pk=post.pk %}">{{ post.titulo }}</a></h1>
->>>>>>> 54824ed86cea78e288af450baaf3fa34baba44e0
             <p>{{ post.texto|truncatechars:200 }}</p>
         </div>
     {% endfor %}
